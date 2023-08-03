@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First HTML page</title>
+</head>
+
+<body>
+  <h3>This is title</h3>
+  <p>Some images</p>
+  <img
+    src="https://images.unsplash.com/photo-1629624467541-f73ef8f12df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+    style="width: 200px" />
+  <img
+    src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80"
+    style="width: 200px" />
+  <img
+    src="https://images.unsplash.com/photo-1610121172299-5f3c7c55bccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+    style="width: 200px" />
+  <br />
+  <a href=""></a>
+  <a
+    href="https://images.unsplash.com/photo-1610121172299-5f3c7c55bccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">ABC</a><br/>
+  <label>Type here</label>
+  <div style="display: flex;">
+    <input id="a" type="text" placeholder="Ex: 1,2,3,..." value="">
+    +
+    <input id="b" type="text" placeholder="Ex: 1,2,3,..." value="">
+    =
+    <input type="text" id="sum" readonly>
+  </div>
+
+  <button onclick="sum()">Sum</button>
+</body>
+<script>
+  function sum() {
+    var a = Number(document.getElementById("a").value);
+    var b = Number(document.getElementById("b").value);
+    document.getElementById("sum").value = a+b;
+  }
+</script>
+
+</html>
